@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interactive JavaScript Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>Interactive JavaScript Quiz</h1>
+    <div id="auth-section">
+      <p>Please enter the password to access the quiz:</p>
+      <input type="password" id="password" placeholder="Enter password" />
+      <button id="login-btn">Login</button>
+      <p id="auth-feedback" style="color: red; display: none;"> Try again.</p>
+    </div>
+    <form id="quiz-form" style="display: none;">
+      <div class="question">
+        <p>1. What is the capital of canada?</p>
+        <label><input type="radio" name="q1" value="correct"> ottawa</label><br>
+        <label><input type="radio" name="q1" value="incorrect"> toronto</label><br>
+        <label><input type="radio" name="q1" value="incorrect"> miami</label><br>
+      </div>
+      <div class="question">
+        <p>2. JavaScript is primarily used for:</p>
+        <label><input type="radio" name="q2" value="correct"> Web development</label><br>
+        <label><input type="radio" name="q2" value="incorrect"> Data Science</label><br>
+        <label><input type="radio" name="q2" value="incorrect"> Database Management</label><br>
+      </div>
+      <p id="progress">Question 1 of 2</p>
+      <button type="button" id="submit-btn">Submit Quiz</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="interactiveQuiz.js"></script>
+</body>
+</html>
